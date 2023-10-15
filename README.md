@@ -1084,7 +1084,10 @@ console.log(allTruthy)
 Asynchronous code — Eşzamansız kod
 
 ```tsx
-const options = { method: 'POST', headers: { 'Content-Type: 'application/json' }}
+const options = {
+  method: 'POST',
+  headers: { 'Content-Type: application/json' }
+}
 
 const organization = { name: 'Acme Inc.' }
 const person = { firstName: 'Jane', lastName: 'Doe' }
