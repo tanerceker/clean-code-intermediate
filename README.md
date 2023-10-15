@@ -460,7 +460,7 @@ fruits.forEach(digest);
 
 <br/>
 
-break and continue
+break & continue
 
 ```tsx
 // Kontrol bayrağı (Control flag), kodun yürütülüp yürütülmeyeceğini
@@ -502,7 +502,7 @@ for (const user of users) {    ✅
 
 <br/>
 
-Spread and Rest syntax — Spread ve Rest sözdizimi
+Spread & Rest syntax — Spread ve Rest sözdizimi
 
 ```tsx
 // Nesne klonlama (Object cloning)
