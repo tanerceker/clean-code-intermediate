@@ -695,7 +695,7 @@ const { data: user, status } = response
 console.log(user)
 
 // "status: situation" nesnedeki status'u situation değişkeni olarak çıkarır
-const { data: user, status: taner } = response
+const { data: user, status: situation } = response
 console.log(taner)
 
 
