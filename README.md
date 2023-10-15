@@ -1094,7 +1094,7 @@ const person = { firstName: 'Jane', lastName: 'Doe' }
 const deal = { title: 'New deal' }
 
 // callback hell
-const createNewDeal = () => {    ❌
+const createNewDeal = () => {
   fetch('/organizations', {
       body: JSON.stringify(organization),
       ...options
@@ -1142,10 +1142,13 @@ const createNewDeal = () => {    ❌
 const createNewDeaul = async () => {    ✅
   const organizationResponse = await fetch('/organizations', { body: JSON.stringify(organization), ...options })
   const { organizationId } = await organizationResponse.json()
+
   const personResponse = await fetch('/persons', { body: JSON.stringify({ ...person, organizationId }), ...options })
   const { personId } = await personResponse.json()
+
   const dealResponse = await fetch('deals', { body: JSON.stringify({ ...deal, personId }), ...options })
   const { dealId } = await dealResponse.json()
+
   console.log(deadId) // the deal ID
 }
 
