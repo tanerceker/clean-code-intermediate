@@ -510,7 +510,7 @@ Spread & Rest syntax — Spread ve Rest sözdizimi
 // Object.assign() işlevinin yüzeysel bir kopya (shallow copy)
 // oluşturduğunu unutmayın.
 
-// Yüzeysel kopyanın (Shallow copy) nın anlamı
+// Yüzeysel kopyanın (Shallow copy) anlamı
 // kopyalanan nesnenin iç içe geçmiş özelliklerinin kaynak nesneninkilerle
 // aynı referansı paylaşmasıdır, dolayısıyla kaynak nesnenin birinci düzey
 // özelliklerini değiştirirseniz kopyalanan nesne aynı kalacaktır.
