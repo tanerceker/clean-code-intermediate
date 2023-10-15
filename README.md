@@ -1,4 +1,4 @@
-# Clean Code - Intermediate
+# Clean Code — Intermediate (Orta Seviye)
 
 ---
 
