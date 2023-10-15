@@ -1095,19 +1095,40 @@ const deal = { title: 'New deal' }
 
 // callback hell
 const createNewDeal = () => {    ❌
-	fetch('/organizations', { body: JSON.stringify(organization), ...options })
-	.then(response => response.json())
-	.then({ organizationId }) => {
-		return fetch('/persons', { body: JSON.stringify({ ...person, organizationId }), ...options })
-		.then(response => response.json())
-		.then(({ personId }) => {
-			return fetch('deals', { body: JSON.stringify({ ...deal, personId }), ...options })
-			.then(response => response.json())
-			.then(({ dealId }) => {
-				console.log(dealId) // ID
-			})
-		})
-	})
+  fetch('/organizations', {
+      body: JSON.stringify(organization),
+      ...options
+    })
+    .then(response => response.json())
+    .then({
+      organizationId
+    }) => {
+      return fetch('/persons', {
+          body: JSON.stringify({
+            ...person,
+            organizationId
+          }),
+          ...options
+        })
+        .then(response => response.json())
+        .then(({
+          personId
+        }) => {
+          return fetch('deals', {
+              body: JSON.stringify({
+                ...deal,
+                personId
+              }),
+              ...options
+            })
+            .then(response => response.json())
+            .then(({
+              dealId
+            }) => {
+              console.log(dealId) // ID
+            })
+        })
+    })
 }
 
 
