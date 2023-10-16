@@ -1035,9 +1035,9 @@ const users = [
 
 let areThereJennifers = false
 for (const user of users) {    ❌
-	if(user.middleName !== 'Jennifer') continue
-	areThereJennifers = true
-	break
+  if(user.middleName !== 'Jennifer') continue
+  areThereJennifers = true
+  break
 }
 console.log(areThereJennifers) // true
 
@@ -1066,8 +1066,7 @@ console.log(areThereJennifers)// true
 // Array.every(), dizideki belirli tüm öğelerin belirli bir koşulu karşılayıp
 // karşılamadığını kontrol etmemizi sağlar
 
-const userMiddleNameIs =
-(middleName) => (user) => user.middleName === middleName
+const userMiddleNameIs = (middleName) => (user) => user.middleName === middleName
 const isEveryoneJennifer = users.every(userMiddleNameIs('Jennifer'))    ✅
 console.log(isEveryoneJennifer) // false
 
@@ -1094,7 +1093,7 @@ const person = { firstName: 'Jane', lastName: 'Doe' }
 const deal = { title: 'New deal' }
 
 // callback hell
-const createNewDeal = () => {
+const createNewDeal = () => {    ❌
   fetch('/organizations', {
       body: JSON.stringify(organization),
       ...options
@@ -1210,8 +1209,8 @@ const firstName = 'Taner', lastName = 'Çeker'    ✅
 
 const { log } = console
 const square = (number) => {    ❌
-	log(`Squaring...`)
-	return number  2
+  log(`Squaring...`)
+  return number  2
 }
 const result = square(4) // `Squaring...`
 log(result) // 16
