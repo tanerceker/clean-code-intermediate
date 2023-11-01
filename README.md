@@ -1333,7 +1333,3 @@ const truthyBoolean = !number; // sayı değilse
 console.log(truthyBoolean); // true
 console.log(typeof truthyBoolean); // `boolean`
 ```
-
----
-
-— Taner Çeker tarafından hazırlanmıştır.
